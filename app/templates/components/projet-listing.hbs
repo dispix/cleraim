@@ -1,0 +1,50 @@
+<section class="projet">
+	<div class="projet-header">
+		<div class="col-xs-12">
+			<h3>{{projet.titre}}</h3>
+		</div>
+		<div class="col-md-3">
+			<p class="projet-programme">
+				<b>Programme</b>
+				{{#each projet.programme as |line|}}
+					<br>
+					{{line}}
+				{{/each}}
+			</p>
+		</div>
+		<div class="col-md-3">
+			<p class="projet-lieu">
+				<b>Lieu</b>
+				{{#each projet.lieu as |line|}}
+					<br>
+					{{line}}
+				{{/each}}
+			</p>
+		</div>
+		<div class="col-md-3">
+			<p class="projet-enseignants">
+				<b>Enseignants</b>
+				{{#each projet.enseignants as |line|}}
+					<br>
+					{{line}}
+				{{/each}}
+			</p>
+		</div>
+		<div class="col-md-3">
+			<p class="projet-infos">
+				<b>ENSA Nancy</b>
+				{{#each projet.infos as |line|}}
+					<br>
+					{{line}}
+				{{/each}}
+			</p>
+		</div>
+	</div>
+	<projet class="body">
+		<div class="col-xs-12">
+			<p class="projet-description">
+				{{projet.description}}
+			</p>
+		</div>
+	</projet>
+</section>

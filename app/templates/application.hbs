@@ -1,0 +1,28 @@
+<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header class="header">
+		<a href="/"><h2 class="site-title">Clément Raimbault</h2></a>
+		<nav class="nav">
+			<ul>
+					<li>{{#link-to "projets"}}Projets{{/link-to}}</li>
+					<li>{{#link-to "workshops"}}Workshops et autres{{/link-to}}</li>
+					<li>{{#link-to "persos"}}Travaux personnels{{/link-to}}</li>
+			</ul>
+		</nav>
+</header>
+
+<div class="container">
+	{{outlet}}
+</div>
+
+<footer class="footer container-fluid">
+	<div class="row">
+		<ul class="contact col-xs-12">
+			<li class="contact-email col-xs-12 col-sm-4 text-xs-left text-sm-left"><a href="mailto:clement.raimbault.archi@gmail.com">clement.raimbault.archi@gmail.com</a></li>
+			<li class="contact-phone col-xs-12 col-sm-4 text-xs-left text-sm-center"><a href="tel:+33615889187">+33 (0)6 15 88 91 87</a></li>
+			<li class="contact-adress col-xs-12 col-sm-4 text-xs-left text-sm-right">32 rue Oberlin, 54000 Nancy</li>
+		</ul>
+	</div>
+</footer>

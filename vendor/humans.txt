@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Octave Raimbault -- Author
+	Clément Raimbault -- Owner
+
+# THANKS
+
+
+
+# TECHNOLOGY COLOPHON
+
+	Ember.js
+	CSS3, HTML5
+	Sass, Bootstrap, Modernizr, Normalize.css

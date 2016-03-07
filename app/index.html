@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Clément Raimbault</title>
+		<meta name="description" content="Le site personnel de Clément Raimbault, architecte.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		{{content-for "head"}}
+
+		<link rel="stylesheet" href="assets/vendor.css">
+		<link rel="stylesheet" href="assets/cleraim.css">
+
+		{{content-for "head-footer"}}
+	</head>
+	<body>
+		{{content-for "body"}}
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+		<script src="assets/vendor.js"></script>
+		<script src="assets/cleraim.js"></script>
+
+		{{content-for "body-footer"}}
+	</body>
+</html>
