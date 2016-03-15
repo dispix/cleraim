@@ -10,10 +10,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
+html, body {
 	color: #222;
-	font-size: 1em;
-	line-height: 1.4;
+	font-size: 0.95em;
+	line-height: 1.3;
+	font-family: "Roboto";
 }
 
 /*
@@ -97,62 +98,96 @@ textarea {
 
 $site-white: rgba(250, 250, 250, 1);
 $site-blue: rgba(0, 78, 210, 1);
-$site-shadow: rgba(0, 0, 0, 0.75);
+$site-black: rgba(0, 0, 0, 0.95);
+$site-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.75);
+$header-font: "Carrois Gothic";
+$body-font: "Roboto";
+$navbar-height: 60px;
+
+p {
+	font-family: $body-font;
+}
 
 ul, li {
 	list-style-type: none;
 }
 
-.header {
-	background-color: rgba(0, 0, 0, 0.95);
-	box-shadow: 0px 2px 8px 0px $site-shadow;
-	padding-left: 30px;
+.navbar {
+	background-color: $site-black;
+	box-shadow: $site-shadow;
+	border: none;
+	border-radius: 0px;
+	position: fixed;
+	width: 100%;
+	height: $navbar-height;
+	z-index: 1;
 
 	h2 {
-		font-size: 2em;
-		display: inline-block;
+		margin-top: 0;
+		font-size: 1.8rem;
 		color: $site-white;
 		text-transform: uppercase;
+		font-family: $header-font;
 	}
 
-	.nav {
-		margin-top: 20px;
-		display: inline-block;
+	.navbar-toggle {
+		border: none;
+		background-color: $site-black !important;
+		margin: 1rem 0 2px 1rem;
+	}
 
-		ul {
+	.navbar-collapse {
+		border: none;
+		background-color: $site-black;
+		box-shadow: $site-shadow;
 
+		.nav {
 			li {
-				display: inline-block;
-				margin-right: 50px;
-
 				a {
+					font-size: 1rem;
 					color: $site-white;
 					text-transform: uppercase;
+					font-family: $body-font;
+					padding: 1.5rem 15px 0;
 
 					&:hover {
 						color: $site-white;
 					}
 				}
 
-				a.active:before {
-					content: ">_";
+				a.active {
+					color: $site-white;
+
+					&:before {
+						content: ">_";
+					}
 				}
 			}
 		}
 	}
 }
 
+.main {
+	padding-top: $navbar-height;
+
+	.projet-description {
+		text-align: justify;
+	}
+}
+
 .footer {
 	background-color: rgba(0, 0, 0, 0.95);
 	margin-top: 15px;
-	padding-top: 6px;
+	padding: 15px 0 15px;
+	width: 100%;
 
 	ul {
+		padding: 0;
 
 		li {
-
 			a {
 				color: $site-white;
+				font-family: $body-font;
 
 				&:hover {
 					color: $site-white;
@@ -166,12 +201,10 @@ ul, li {
 	}
 }
 
-.projet-programme, .projet-lieu, .projet-enseignants, .projet-infos {
-	display: inline-block;
-	margin-right: 1em;
+h3 {
+	font-family: $header-font;
+	text-transform: uppercase;;
 }
-
-
 
 
 
